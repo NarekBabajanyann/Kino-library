@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (nameCheck === true && surnameCheck === true && emailCheck === true && passwordCheck === true && passwordComfirmCheck === true) {
             createUserWithEmailAndPassword(auth, email.value, password.value)
                 .then(() => {
-                    window.location.href = 'app/main.html';
+                    window.location.href = 'main.html';
                 })
                 .catch((error) => {
                     if (error.code === 'auth/email-already-in-use') {
@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         signInWithEmailAndPassword(auth, email.value, password.value)
             .then(() => {
-                window.location.href = 'app/main.html';
+                window.location.href = 'main.html';
             })
             .catch((error) => {
                 if (error.code === 'auth/user-not-found') {
