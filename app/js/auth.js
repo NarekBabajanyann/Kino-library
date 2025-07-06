@@ -7,25 +7,17 @@ import {
     onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
 
+import { firebaseConfig } from "./config.js";
 
 // Auth state
 export function listenAuthState(redirectIfNoUser = true) {
     const auth = getAuth();
     onAuthStateChanged(auth, (user) => {
         if (!user && redirectIfNoUser) {
-            window.location.href = "login.html";
+            window.location.href = "index.html";
         }
     });
 }
-// Your web app's Firebase configuration
-const firebaseConfig = {
-    apiKey: "AIzaSyD7_Y2iDb9REZLaUQa-Iy4hBM5PMf4N-c0",
-    authDomain: "kino-library.firebaseapp.com",
-    projectId: "kino-library",
-    storageBucket: "kino-library.firebasestorage.app",
-    messagingSenderId: "886235550470",
-    appId: "1:886235550470:web:36133e86f05be36fd80487"
-};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -166,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (nameCheck === true && surnameCheck === true && emailCheck === true && passwordCheck === true && passwordComfirmCheck === true) {
             createUserWithEmailAndPassword(auth, email.value, password.value)
                 .then(() => {
-                    window.location.href = 'index.html';
+                    window.location.href = 'app/main.html';
                 })
                 .catch((error) => {
                     if (error.code === 'auth/email-already-in-use') {
@@ -202,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         signInWithEmailAndPassword(auth, email.value, password.value)
             .then(() => {
-                window.location.href = 'index.html';
+                window.location.href = 'app/main.html';
             })
             .catch((error) => {
                 if (error.code === 'auth/user-not-found') {
