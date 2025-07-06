@@ -7,8 +7,6 @@ import {
     onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
 
-import { firebaseConfig } from "./config.js";
-
 // Auth state
 export function listenAuthState(redirectIfNoUser = true) {
     const auth = getAuth();
@@ -22,6 +20,16 @@ export function listenAuthState(redirectIfNoUser = true) {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+
+// Firebase configs
+const firebaseConfig = {
+    apiKey: "AIzaSyD7_Y2iDb9REZLaUQa-Iy4hBM5PMf4N-c0",
+    authDomain: "kino-library.firebaseapp.com",
+    projectId: "kino-library",
+    storageBucket: "kino-library.firebasestorage.app",
+    messagingSenderId: "886235550470",
+    appId: "1:886235550470:web:36133e86f05be36fd80487"
+};
 
 document.addEventListener('DOMContentLoaded', () => {
     // Main constants

@@ -1,4 +1,4 @@
-import { apiKey } from "./config.js";
+const apiKey = "e72d1c7e9c26deae238ef35a71caf152";
 const baseLink = "https://api.themoviedb.org/3";
 
 const fetchMovies = async (category) => {
