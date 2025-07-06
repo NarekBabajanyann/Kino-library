@@ -46,9 +46,6 @@ html {
     color: white;
 }
 
-.main-header>nav>a:hover {
-    text-decoration: underline;
-}
 
 main {
     margin-top: 12vh;
@@ -232,9 +229,6 @@ footer {
     text-decoration: none;
 }
 
-.footer-content>ul>li>a:hover {
-    text-decoration: underline;
-}
 
 #logout-button {
     background-color: #e50914;
@@ -249,9 +243,6 @@ footer {
     transition: 0.4s;
 }
 
-#logout-button:hover {
-    background: transparent;
-}
 
 #logout-button:active {
     scale: 0.95;
@@ -289,9 +280,6 @@ footer {
     user-select: none;
 }
 
-.card:hover {
-    scale: 1.03;
-}
 
 .card:active {
     scale: 0.95;
@@ -322,9 +310,6 @@ footer {
     font-family: "Montserrat", sans-serif;
 }
 
-.card>header>p>em:hover {
-    color: rgb(49, 49, 255);
-}
 
 .card>img {
     width: 15vw;
@@ -359,6 +344,29 @@ footer {
     to {
         opacity: 1;
     }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .card:hover {
+        scale: 1.03;
+    }
+
+    .footer-content>ul>li>a:hover {
+        text-decoration: underline;
+    }
+
+    .card>header>p>em:hover {
+        color: rgb(49, 49, 255);
+    }
+
+    #logout-button:hover {
+        background: transparent;
+    }
+
+    .main-header>nav>a:hover {
+        text-decoration: underline;
+    }
+
 }
 
 @media (max-width:1199px) {
@@ -405,6 +413,7 @@ footer {
         width: 25vw;
     }
 }
+
 
 @media (max-width:767px) {
     .header-icon {
