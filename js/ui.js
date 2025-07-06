@@ -109,7 +109,7 @@ const logout = () => {
         const auth = getAuth();
         signOut(auth)
             .then(() => {
-                window.location.href = 'login.html';
+                window.location.href = 'index.html';
             })
             .catch((error) => {
                 console.error('Logout error:', error);

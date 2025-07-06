@@ -98,7 +98,7 @@ main>.search>div>form>input::-webkit-search-cancel-button {
 }
 
 main>.search>div>form>button {
-    width: 5vw;
+    padding: 0 2vw;
     height: 5vh;
     background-color: #2f2f2f;
     color: white;
@@ -361,22 +361,133 @@ footer {
     }
 }
 
-@media (max-width:1999px) {
+@media (max-width:1199px) {
+
+    .card {
+        width: 25vw;
+    }
+
+    .card>header {
+        width: 20vw;
+    }
+
+    .card>img {
+        width: 20vw;
+    }
+
+    .cards-container>header>p {
+        width: 20vw;
+    }
 }
 
 @media (max-width:991px) {
+    .header-icon {
+        width: 8%;
+    }
+
+    main>.search>div>form>input {
+        width: 30vw;
+    }
+
     .card {
         width: 30vw;
     }
-    
+
+    .card>header {
+        width: 25vw;
+    }
+
     .card>img {
         width: 25vw;
     }
-    
+
+    .cards-container>header>p {
+        width: 25vw;
+    }
 }
 
-@media (max-width:767px) {}
+@media (max-width:767px) {
+    .header-icon {
+        width: 10%;
+    }
 
-@media (max-width:576px) {}
+    main>.search>div>form>input {
+        width: 35vw;
+    }
 
-@media (max-width:480px) {}
+    .card {
+        width: 45vw;
+    }
+
+    .card>header {
+        width: 40vw;
+    }
+
+    .card>img {
+        width: 40vw;
+    }
+
+    .cards-container>header>p {
+        width: 40vw;
+    }
+}
+
+@media (max-width:576px) {
+    .header-icon {
+        width: 12%;
+    }
+
+    .main-header>nav>a {
+        font-size: 16px;
+    }
+
+    main>.search>div>form>input {
+        width: 40vw;
+    }
+
+    .card {
+        width: 55vw;
+    }
+
+    .card>header {
+        width: 50vw;
+    }
+
+    .card>img {
+        width: 50vw;
+    }
+
+    .cards-container>header>p {
+        width: 50vw;
+    }
+}
+
+@media (max-width:480px) {
+    .header-icon {
+        width: 15%;
+    }
+
+    .main-header>nav>a {
+        font-size: 12px;
+    }
+
+    main>.search>div>form>input {
+        width: 50vw;
+    }
+
+    .card {
+        width: 70vw;
+    }
+
+    .card>header {
+        width: 65vw;
+    }
+
+    .card>img {
+        width: 65vw;
+    }
+
+    .cards-container>header>p {
+        width: 65vw;
+    }
+}
