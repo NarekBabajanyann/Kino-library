@@ -17,10 +17,6 @@ export function listenAuthState(redirectIfNoUser = true) {
     });
 }
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-
 // Firebase configs
 const firebaseConfig = {
     apiKey: "AIzaSyD7_Y2iDb9REZLaUQa-Iy4hBM5PMf4N-c0",
@@ -30,6 +26,11 @@ const firebaseConfig = {
     messagingSenderId: "886235550470",
     appId: "1:886235550470:web:36133e86f05be36fd80487"
 };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
 
 document.addEventListener('DOMContentLoaded', () => {
     // Main constants
